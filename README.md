@@ -20,7 +20,7 @@ Then in your code require it as
 
 Load your configuration
 
-    LastFm.load_configuration(your_api_key, your_secret+key)
+    LastFm.load_configuration(API_KEY, SECRET_KEY)
 
 Get information for an artist
 
