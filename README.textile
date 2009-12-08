@@ -1,9 +1,8 @@
 h1. LastFm
 
-Provides some easy ways to interact with the  LastFM API. 
+This library provides some a Ruby interface to interact with the  LastFM API. For the time being you can only get data from LastFm. 
 
-First of all I would like to thank (gordonbisnor) for his Rails plugin http://github.com/gordonbisnor/lastfm on which I started building. I started writing this library as I was not satisfied with
-existing Ruby clients for LastFm. This project is far from being complete and it is not well tested but works quite well for my current project. The reason for writing this library is that most of the existing clients were not Rubyish enough and were tightly attached to Rails. In order to start using this library be sure you have a LastFm api and secret key
+First of all I would like to thank ("gordonbisnor":http://github.com/gordonbisnor/) for his "Rails plugin":http://github.com/gordonbisnor/lastfm on which I started building. I started writing this library as I was not satisfied with existing Ruby clients for LastFm. This project is far from being complete and it is not well tested but works quite well for my current project. The reason for writing this library is that most of the existing clients were not Rubyish enough and were tightly attached to Rails. In order to start using this library be sure you have a "LastFm API":http://www.last.fm/api api and secret key.
 
 h2. Installation
 
