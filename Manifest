@@ -2,6 +2,7 @@ MIT-LICENSE
 Manifest
 README.textile
 Rakefile
+init.rb
 lastfm.gemspec
 lib/last_fm.rb
 lib/last_fm/models/album.rb

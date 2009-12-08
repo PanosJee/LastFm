@@ -1,0 +1,1 @@
+require 'lib/last_fm.rb'
