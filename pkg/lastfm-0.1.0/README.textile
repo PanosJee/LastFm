@@ -39,13 +39,17 @@ Get a track of this artist
 Get an album
 
 @LastFm::Album.new('Bonobo','Animal Magic')
+
 LastFm::Album.search('Bonobo','Animal Magic')
+
 LastFm::Artist.search('Bonobo').album('Animal Magic')@
 
 Get a track
 
 @LastFm::Track.new('Bonobo','Silver')
+
 LastFm::Track.search('Bonobo','Silver')
+
 LastFm::Track.search('Bonobo').album('Silver')@
 
 Get user information
