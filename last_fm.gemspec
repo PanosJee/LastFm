@@ -1,7 +1,7 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{lastfm}
+  s.name = %q{last_fm}
   s.version = "0.1.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 1.2") if s.respond_to? :required_rubygems_version=
@@ -10,11 +10,11 @@ Gem::Specification.new do |s|
   s.description = %q{A Ruby client for LastFm that feels like Ruby.}
   s.email = %q{panosjee@gmail.com}
   s.extra_rdoc_files = ["README.textile", "lib/last_fm.rb", "lib/last_fm/models/album.rb", "lib/last_fm/models/artist.rb", "lib/last_fm/models/base.rb", "lib/last_fm/models/chart.rb", "lib/last_fm/models/event.rb", "lib/last_fm/models/tag.rb", "lib/last_fm/models/track.rb", "lib/last_fm/models/user.rb"]
-  s.files = ["MIT-LICENSE", "Manifest", "README.textile", "Rakefile", "init.rb", "lastfm.gemspec", "lib/last_fm.rb", "lib/last_fm/models/album.rb", "lib/last_fm/models/artist.rb", "lib/last_fm/models/base.rb", "lib/last_fm/models/chart.rb", "lib/last_fm/models/event.rb", "lib/last_fm/models/tag.rb", "lib/last_fm/models/track.rb", "lib/last_fm/models/user.rb"]
+  s.files = ["MIT-LICENSE", "Manifest", "README.textile", "Rakefile", "init.rb", "lastfm.gemspec", "lib/last_fm.rb", "lib/last_fm/models/album.rb", "lib/last_fm/models/artist.rb", "lib/last_fm/models/base.rb", "lib/last_fm/models/chart.rb", "lib/last_fm/models/event.rb", "lib/last_fm/models/tag.rb", "lib/last_fm/models/track.rb", "lib/last_fm/models/user.rb", "last_fm.gemspec"]
   s.homepage = %q{http://github.com/PanosJee/LastFm}
-  s.rdoc_options = ["--line-numbers", "--inline-source", "--title", "Lastfm", "--main", "README.textile"]
+  s.rdoc_options = ["--line-numbers", "--inline-source", "--title", "Last_fm", "--main", "README.textile"]
   s.require_paths = ["lib"]
-  s.rubyforge_project = %q{lastfm}
+  s.rubyforge_project = %q{last_fm}
   s.rubygems_version = %q{1.3.5}
   s.summary = %q{A Ruby client for LastFm that feels like Ruby.}
 

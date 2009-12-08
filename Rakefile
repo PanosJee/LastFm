@@ -2,7 +2,7 @@ require 'rubygems'
 require 'rake'
 require 'echoe'
 
-Echoe.new('lastfm', '0.1.0') do |p|
+Echoe.new('last_fm', '0.1.0') do |p|
   p.description    = "A Ruby client for LastFm that feels like Ruby."
   p.url            = "http://github.com/PanosJee/LastFm"
   p.author         = "Panagiotis Papadopoulos (PanosJee)"
