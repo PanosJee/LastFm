@@ -17,9 +17,9 @@ require 'last_fm/models/artist.rb'
 require 'last_fm/models/album.rb'
 
 module LastFm
-  
+
   class << self
-    
+
     def load_configuration(key, secret = nil, prefix = nil)
       @key    = key
       @secret = secret
@@ -32,16 +32,16 @@ module LastFm
       signature << 'method' + method
       params.each_pair do |key,value|
           signature << key.to_s + value
-      end 
+      end
       signature = signature.sort.join + @secret
       return Digest::MD5.hexdigest(signature)
     end
-    
+
     # fetch lastfm
     def fetch_data(path)
       http       = Net::HTTP.new("ws.audioscrobbler.com",80)
       resp, data = http.get(urlize(@prefix+path+"&api_key="+@key))
-      return resp.code == "200" ? data : false	
+      return resp.code == "200" ? data : false
     end
 
     def urlize(string)
@@ -49,15 +49,15 @@ module LastFm
     end
 
     def get_session(token)
-      signature = get_signature('auth.getsession',{:api_key => @key, :token => token}) 
+      signature = get_signature('auth.getsession',{:api_key => @key, :token => token})
       if @session = connect_with_auth('auth.getsession',{ :api_key => @ey, :token => token, :signature => signature })
         session[:lastfm_name] = @session['session']['name']
         session[:lastfm_key]  = @session['session']['key']
-      else 
+      else
         return false
-      end 
+      end
     end
-    
+
     #get_lastfm
     def request(method,params,type='hash')
       http = Net::HTTP.new("ws.audioscrobbler.com",80)
@@ -74,11 +74,11 @@ module LastFm
         else
           return data
         end
-      else 
+      else
         return resp.body
-      end 
+      end
     end
- 
+
     def authenticated_request(method, params,type = 'hash')
       http = Net::HTTP.new("ws.audioscrobbler.com",80)
       path = @prefix + method
@@ -92,10 +92,10 @@ module LastFm
           hash = Hash.from_xml(data)['lfm']
           hash.shift
           return hash
-        else 
+        else
           return data
-        end 
-      else 
+        end
+      else
         return false
       end
     end
